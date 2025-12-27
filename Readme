@@ -1,0 +1,96 @@
+# Mall Customer Segmentation using K-Means Clustering
+
+##  Project Overview
+This project focuses on **exploratory data analysis (EDA)** and **customer segmentation** using the **Mall Customers dataset**.  
+The goal is to understand customer behavior based on **Age**, **Annual Income**, and **Spending Score**, and to group customers into meaningful clusters using **K-Means Clustering**.
+
+This type of analysis is widely used in **marketing and retail** to design targeted strategies for different customer segments.
+
+
+
+##  Dataset Description
+The dataset contains information about mall customers with the following attributes:
+
+- **CustomerID** – Unique identifier (dropped during analysis)
+- **Gender** – Male / Female
+- **Age** – Age of the customer
+- **Annual Income (k$)** – Annual income in thousand dollars
+- **Spending Score (1-100)** – Score assigned based on customer behavior
+
+
+
+##  Technologies & Libraries Used
+- **Python**
+- **NumPy** – Numerical computations
+- **Pandas** – Data manipulation and analysis
+- **Matplotlib** – Data visualization
+- **Seaborn** – Statistical visualizations
+- **Scikit-learn** – Machine learning (K-Means clustering)
+
+
+
+##  Exploratory Data Analysis (EDA)
+The following analysis was performed:
+
+- Checked dataset shape and data types
+- Renamed incorrect column names
+- Handled missing values
+- Removed irrelevant columns
+- Generated descriptive statistics
+- Visualized:
+  - Distribution of Age, Income, and Spending Score
+  - Gender distribution
+  - Violin plots by Gender
+  - Age group distribution
+  - Spending score distribution
+  - Income distribution
+  - Income vs Spending Score relationship
+
+
+
+##  Data Visualization
+Various plots were created to understand customer patterns:
+
+- **Histograms & KDE plots** for numerical features
+- **Count plots** for gender analysis
+- **Violin plots** to compare distributions by gender
+- **Bar plots** for age, income, and spending categories
+- **Scatter plots** for income vs spending behavior
+
+
+
+##  Clustering Approach
+### K-Means Clustering
+- Used the **Elbow Method** to determine the optimal number of clusters
+- Calculated **WCSS (Within-Cluster Sum of Squares)** for K values from 1 to 10
+- Applied **K-Means clustering** on:
+  - Age vs Spending Score
+  - Annual Income vs Spending Score
+  - All numerical features combined
+
+
+
+##  Results
+- Customers were successfully segmented into multiple clusters
+- Each cluster represents a unique customer group with similar behavior
+- Cluster centers were visualized to understand spending patterns
+- Final clusters were visualized using:
+  - 2D scatter plots
+  - 3D plots (Age, Income, Spending Score)
+
+
+
+##  Key Insights
+- High-income customers do not always have high spending scores
+- Younger customers show varied spending behavior
+- Customer segmentation can help businesses:
+  - Identify high-value customers
+  - Design personalized marketing strategies
+  - Improve customer retention
+
+---
+
+##  How to Run the Project
+1. Clone the repository:
+   ```bash
+   git clone <repository-link>
